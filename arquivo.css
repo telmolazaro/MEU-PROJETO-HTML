@@ -2,7 +2,27 @@
  font-family: space grotesk; 
  color:#FFFFFF ; 
  background-color:#151515 ;
+ border-radius: 20px;
+border-width: 5px;
+border-color: #242424;
 }
+.position {
+    position: relative;
+    right: 80px;
+}
+.position1 {
+    position: relative;
+    right: 60px;
+}
+.position2 {
+    position: relative;
+    right: 40px;
+}
+.position3 {
+    position: relative;
+    right: 20px;
+}
+
 h4 {
 font-size: 22px;
 font-weight: 700;
