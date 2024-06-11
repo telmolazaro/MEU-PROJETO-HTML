@@ -1,54 +1,76 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+header {
+  grid-area: header;
+  display: inline-block;
+}
+main {
+  grid-area: main;
+  padding: 0 70px;
+}
+footer {
+  grid-area: footer;
+  padding: 0 70px;
+}
 .font {
- font-family: space grotesk; 
- color:#FFFFFF ; 
- background-color:#151515 ;
- border-radius: 20px;
-border-width: 5px;
-border-color: #242424;
+  font-family: space grotesk;
+  color: #ffffff;
+  background-color: #242424;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: #0698ec;
+  font-size: 20px;
 }
-.position {
-    position: relative;
-    right: 80px;
+.font1 {
+  font-size: 20px;
+  padding: 5px;
 }
-.position1 {
-    position: relative;
-    right: 60px;
+.fontStyle {
+  font-family: Space Grotesk;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  text-align: left;
 }
-.position2 {
-    position: relative;
-    right: 40px;
+.button--hover:hover {
+  color: #ffffff;
+  background-color: #0698ec;
 }
-.position3 {
-    position: relative;
-    right: 20px;
-}
-
-h4 {
-font-size: 22px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: -0.4444444477558136px;
-width: 172px;
-height: 32px;
-gap: 0px;
-opacity: 0px;
-position: relative;
-left: 20px;
-bottom: 10px;
-}
-nav { 
-    position: relative;
-    left: 980px;
-bottom: 70px;
-}
-div {
-    background-color:#242424 ;
-    
+span > * {
+  padding: 0 70px;
 }
 body {
-    height: 100vh;
-    margin: 0;
-     font-family: space grotesk; 
- color:#FFFFFF ; 
- background-color:#151515 
+  margin: 0;
+  font-family: space grotesk;
+  color: #ffffff;
+  background-color: black;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242424;
+  padding: 0 70px;
+}
+section {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+  text-decoration: underline white;
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #0698ec;
+}
+input {
+  width: 330px;
+  height: 25px;
 }
