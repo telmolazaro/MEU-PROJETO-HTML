@@ -1,11 +1,33 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
 }
 header {
   grid-area: header;
@@ -23,14 +45,14 @@ footer {
   font-family: space grotesk;
   color: #ffffff;
   background-color: #242424;
-  border-radius: 20px;
+  border-radius: 10px;
   border-width: 5px;
   border-color: #0698ec;
-  font-size: 20px;
+  font-size: 10px;
+  padding: 10px;
 }
 .font1 {
   font-size: 20px;
-  padding: 5px;
 }
 .fontStyle {
   font-family: Space Grotesk;
@@ -43,6 +65,11 @@ footer {
 .button--hover:hover {
   color: #ffffff;
   background-color: #0698ec;
+  cursor: pointer;
+}
+.imageProgress {
+  border-radius: 50%;
+  width: 300px;
 }
 span > * {
   padding: 0 70px;
@@ -59,9 +86,13 @@ div {
   align-items: center;
   background-color: #242424;
   padding: 0 70px;
+  flex-wrap: wrap;
 }
 section {
   font-size: 30px;
+}
+a {
+  text-decoration: none;
 }
 h3 {
   font-size: 30px;
@@ -73,4 +104,7 @@ h3 {
 input {
   width: 330px;
   height: 25px;
+}
+button {
+  margin: 7px;
 }
