@@ -12,32 +12,29 @@
       rel="stylesheet"
     />
   </head>
-  <body class="container">
+  <body>
     <header>
-      <div>
-        <h4 class="font1">telmolazaro</h4>
-        <nav>
-          <a href="#Sobre mim"
-            ><button class="font button--hover">SOBRE MIM</button></a
-          >
-          <a href="#Projetos"
-            ><button class="font button--hover">PROJETOS</button></a
-          >
-          <a href="#Tecnologias"
-            ><button class="font button--hover">TECNOLOGIAS</button></a
-          >
-          <a href="#CONTATO"
-            ><button class="font button--hover">CONTATO</button></a
-          >
-          <a href="#Redes Sociais"
-            ><button class="font button--hover">REDES SOCIAIS</button></a
-          >
-        </nav>
-      </div>
-      <br />
-      <br />
-      <br />
-      <span>
+      <h4 class="font1">telmolazaro</h4>
+      <nav>
+        <a href="#Sobre mim"
+          ><button class="font button--hover">SOBRE MIM</button></a
+        >
+        <a href="#Projetos"
+          ><button class="font button--hover">PROJETOS</button></a
+        >
+        <a href="#Tecnologias"
+          ><button class="font button--hover">TECNOLOGIAS</button></a
+        >
+        <a href="#CONTATO"
+          ><button class="font button--hover">CONTATO</button></a
+        >
+        <a href="#Redes Sociais"
+          ><button class="font button--hover">REDES SOCIAIS</button></a
+        >
+      </nav>
+    </header>
+    <div class="container">
+      <section>
         <h2 class="fontStyle">Prazer em te conhecer!</h2>
         <h2 class="fontStyle">Eu sou Telmo.</h2>
         <img class="img" src="me3.jpg" alt="Foto do Telmo" />
@@ -56,87 +53,84 @@
           Pretendo apresentar soluções e inovações para clientes e parceiros com
           qualidade, clareza, facilidades e acessibilidade.
         </p>
-      </span>
-    </header>
-    <main>
-      <br />
-      <br />
-      <h3 id="Projetos">Projetos</h3>
-      <img src="qr-code.png" alt="codigo qr-code" />
-      <br />
-      <br />
-      <a href="https://telmolazaro.github.io/qr-code/"
-        ><button class="font button--hover">VISUALIZAR</button></a
-      >
-      <a href="https://github.com/telmolazaro/qr-code"
-        ><button class="font button--hover">VER CÓDIGO</button></a
-      >
-      <br />
-      <br />
-      <br />
-      <h3 id="Tecnologias">Tecnologias</h3>
-      <img class="imageProgress" src="workin progress.jpg" alt="" />
-      <br />
-      <section>
-        <ul>
-          <li>
-            HTML E CSS <img src="html-5.png" alt="logo html" />
-            <img src="css.png" alt="logo html" />
-          </li>
-          <br />
-          <li>Javascript <img src="javascript.png" alt="logo html" /></li>
-          <br />
-          <li>React JS <img src="react js.png" alt="logo html" /></li>
-          <br />
-          <li>Back End <img src="backend.png" alt="logo html" /></li>
-          <br />
-          <li>Python <img src="python.png" alt="logo html" /></li>
-        </ul>
       </section>
-    </main>
-    <footer>
-      <form>
+      <main>
+        <h3 id="Projetos">Projetos</h3>
+        <div class="projects">
+          <div class="project-card">
+            <img src="qr-code.png" alt="codigo qr-code" />
+            <a href="https://telmolazaro.github.io/qr-code/"
+              ><button class="font button--hover">VISUALIZAR</button></a
+            >
+            <a href="https://github.com/telmolazaro/qr-code"
+              ><button class="font button--hover">VER CÓDIGO</button></a
+            >
+          </div>
+        </div>
+        <h3 id="Tecnologias">Tecnologias</h3>
+        <section>
+          <div class="tecnologias">
+            <div>
+              HTML E CSS <img src="html-5.png" alt="logo html" />
+              <img src="css.png" alt="logo html" />
+            </div>
+            <br />
+            <div>JAVASCRIPT <img src="javascript.png" alt="logo html" /></div>
+            <br />
+            <div>REACT JS <img src="react js.png" alt="logo html" /></div>
+            <br />
+            <div>BACK END <img src="backend.png" alt="logo html" /></div>
+            <br />
+            <div>PYTHON <img src="python.png" alt="logo html" /></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <form>
+          <br />
+          <br />
+          <h3 id="CONTATO">CONTATO</h3>
+          <p>
+            Fique a vontade para me contatar pelo formulário ou pelas redes
+            sociais disponíveis. Aguardo seu contato para contibuir em novos
+            projetos e soluções.
+          </p>
+          <label for="NOME">NOME :</label>
+          <input type="text" name="NOME" id="NOME" />
+          <br />
+          <br />
+          <label for="E-MAIL">E-MAIL :</label>
+          <input type="e-mail" name="E-MAIL" id="E-MAIL" />
+          <br />
+          <p>Mensagem:</p>
+          <textarea name="Mensagem" id="" cols="50" rows="20"> </textarea>
+          <br />
+          <br />
+          <button class="font button--hover" type="submit">Enviar</button>
+        </form>
         <br />
         <br />
-        <h3 id="CONTATO">CONTATO</h3>
-        <p>
-          Fique a vontade para me contatar pelo formulário ou pelas redes
-          sociais disponíveis. Aguardo seu contato para contibuir em novos
-          projetos e soluções.
-        </p>
-        <label for="NOME">NOME :</label>
-        <input type="text" name="NOME" id="NOME" />
+        <br />
+
+        <section>
+          <h3 id="Redes Sociais">Redes Sociais:</h3>
+          <a href="https://www.instagram.com/telmolazaro/">
+            <img src="instagram.png" alt="logo instagram" />
+          </a>
+          <a href="https://www.facebook.com/telmo.lazaro">
+            <img src="facebook.png" alt="logo facebook" />
+          </a>
+          <a href="https://www.linkedin.com/feed/">
+            <img src="linkedin.png" alt="logo linkedin" />
+          </a>
+          <a href="https://github.com/telmolazaro">
+            <img src="github.png" alt="logo github" />
+          </a>
+        </section>
+
         <br />
         <br />
-        <label for="E-MAIL">E-MAIL :</label>
-        <input type="e-mail" name="E-MAIL" id="E-MAIL" />
-        <br />
-        <p>Mensagem:</p>
-        <textarea name="Mensagem" id="" cols="50" rows="20"> </textarea>
-        <br />
-        <br />
-        <button class="font button--hover" type="submit">Enviar</button>
-      </form>
-      <br />
-      <br />
-      <br />
-      <section>
-        <h3 id="Redes Sociais">Redes Sociais:</h3>
-        <a href="https://www.instagram.com/telmolazaro/">
-          <img src="instagram.png" alt="logo instagram" />
-        </a>
-        <a href="https://www.facebook.com/telmo.lazaro">
-          <img src="facebook.png" alt="logo facebook" />
-        </a>
-        <a href="https://www.linkedin.com/feed/">
-          <img src="linkedin.png" alt="logo linkedin" />
-        </a>
-        <a href="https://github.com/telmolazaro">
-          <img src="github.png" alt="logo github" />
-        </a>
-      </section>
-      <br />
-      <br />
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

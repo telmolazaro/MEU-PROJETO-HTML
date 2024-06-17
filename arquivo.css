@@ -1,45 +1,56 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  .container {
-    display: grid;
+.project-card img {
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 460px;
+}
+@media screen and (min-width: 769px) {
+  .projects {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "header header"
-      "main main"
-      "footer footer";
+    gap: 20px;
+  }
+  .container {
+    width: 740px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1280px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
+    width: 1180px;
+    margin: 0 auto;
   }
 }
-header {
-  grid-area: header;
-  display: inline-block;
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-main {
-  grid-area: main;
-  padding: 0 70px;
+@media screen and (min-width: 769px) {
+  .tecnologias {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    .container {
+      width: 740px;
+      margin: 0 auto;
+    }
+  }
 }
-footer {
-  grid-area: footer;
-  padding: 0 70px;
+@media screen and (min-width: 1280px) {
+  .tecnologias {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    .container {
+      width: 1180px;
+      margin: 0 auto;
+    }
+  }
 }
 .font {
   font-family: space grotesk;
@@ -71,16 +82,14 @@ footer {
   border-radius: 50%;
   width: 300px;
 }
-span > * {
-  padding: 0 70px;
-}
+
 body {
   margin: 0;
   font-family: space grotesk;
   color: #ffffff;
   background-color: black;
 }
-div {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,8 +97,13 @@ div {
   padding: 0 70px;
   flex-wrap: wrap;
 }
-section {
-  font-size: 30px;
+section > div > div {
+  font-size: 25px;
+  padding: 20px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #0698ec;
+  text-align: center;
 }
 a {
   text-decoration: none;
